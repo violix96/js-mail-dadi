@@ -4,18 +4,13 @@
 
 console.log("Ciao mondo dadi!");
 
-// chiedo al giocatore, tramite un prompt, di scegliere un numero da 1 a 6
-const numeroGiocatore = Number(prompt("Scegli un numero da 1 a 6:"));
+// il computer deve generare un numero casuale da 1 a 6 per l'utente
 
-// verifico se l'input dell'utente è valido 
+const numeroGiocatore = Math.floor(Math.random() * 6 + 1);
+console.log("Il numero del Giocatore è: " + numeroGiocatore);
 
-if(isNaN(numeroGiocatore) || numeroGiocatore < 1 || numeroGiocatore > 6){
-    console.log("Il numero inserito non è valido");
-}else{
-    console.log("Il numero che hai scelto è: " + numeroGiocatore);
-}
-
-// il computer deve generare un numero casuale da 1 a 6
+// il computer deve generare un numero casuale da 1 a 6 per il computer 
 
 const numeroComputer = Math.floor(Math.random() * 6 + 1);
 console.log("Il numero del computer è: " + numeroComputer);
+
