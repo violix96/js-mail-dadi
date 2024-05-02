@@ -14,3 +14,8 @@ if(isNaN(numeroGiocatore) || numeroGiocatore < 1 || numeroGiocatore > 6){
 }else{
     console.log("Il numero che hai scelto è: " + numeroGiocatore);
 }
+
+// il computer deve generare un numero casuale da 1 a 6
+
+const numeroComputer = Math.floor(Math.random() * 6 + 1);
+console.log("Il numero del computer è: " + numeroComputer);
