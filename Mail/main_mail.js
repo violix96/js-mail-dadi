@@ -10,3 +10,17 @@ const mailAutorizzate =  ["mailvincenzoviola1@prova.it", "mailvincenzoviola2@pro
 
 const emailUser = prompt("Inserisci la tua email:");
 
+// variabile che traccia lo stato di autorizzazione dell'email utente
+let autorizzato = false;
+
+// controllo se la mail inserita è presente nella lista delle mail autorizzate 
+
+for (let i = 0; i < mailAutorizzate.lenght; i++){
+
+if (emailUser === mailAutorizzate[i]){
+    autorizzato = true;
+}
+
+}
+
+
